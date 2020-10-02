@@ -1,2 +1,3 @@
-# edu_prepviii_exodus
-EDU Stack OverFlow
+# EDU Stack OverFlow
+EDU Prep8 Final Project
+
