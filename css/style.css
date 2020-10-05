@@ -75,10 +75,11 @@ input[type=text], input[type=password] {
    cursor: pointer;
    width: 30%;
    border-radius: 10px;
+   outline: none;
  }
 
  button:hover {
-   opacity: 0.8;
+   opacity: 0.6;
  }
 
  .container {
@@ -130,7 +131,11 @@ input[type=text], input[type=password] {
    display: flex; 
    justify-content: space-between; 
 
-}   
+} 
+
+a:hoover{
+   background-color: black;
+}
    
  
 
