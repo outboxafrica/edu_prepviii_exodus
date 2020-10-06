@@ -82,3 +82,24 @@
     .footer-content span {
         align-self: flex-end;
     }
+    
+    .container {
+        display: flex;
+        margin-left: 10%;
+    }
+    
+    .container {
+        display: inline-flex;
+    }
+    
+    #container1 {
+        width: 50%;
+        padding-right: 10%;
+        float: left;
+    }
+    
+    #container1 {
+        width: 30%;
+        margin-left: 10%;
+        float: right;
+    }
