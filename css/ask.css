@@ -1,5 +1,5 @@
 body{
-    background-color: #c4c4c4;
+    background-color: white;
     margin: 0;
     padding: 0;
  }
@@ -45,6 +45,7 @@ nav{
      border-radius: 7px;
      outline: none;
      border: none;
+     background-color: #c4c4c4;
   }
  
   .image-with-text {
@@ -66,6 +67,8 @@ nav{
  
  .title-container p{
     color: black;
+    font-weight: 100px;
+    font-family: Arial, Helvetica, sans-serif;
  }
  
  .description-container p{
@@ -83,7 +86,8 @@ nav{
     cursor: pointer;
     width: 30%;
     border-radius: 10px;
-    outline: none;
+    outline: none; 
+    
   }
  
   button:hover {
