@@ -73,7 +73,7 @@ input[type=text], input[type=password] {
    margin: 20px 0;
    border: none;
    cursor: pointer;
-   width: 30%;
+   width: 20%;
    border-radius: 10px;
    outline: none;
  }
