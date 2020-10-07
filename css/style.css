@@ -1,0 +1,76 @@
+*{margin:0;
+padding:0;
+}
+body{
+background-color: #c4c4c4;
+}
+nav{
+    background-color:#0278AE; ;
+  
+}
+nav p:nth-child(1){
+    font-size: 45px;
+    text-align: center;
+color: #FFFFFF;
+padding-top: 30px;
+
+}
+nav p:nth-child(2){
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+form{
+    margin: 20px auto;
+    width: 600px;
+    color: #0278AE;
+    border: #0278AE;
+    background-color: #FFFFFF;
+    padding-top: 05px;
+    border-radius: 10px;
+    border: 3px solid #F1F1F1;
+}
+form h2{
+    text-align: center;
+    color: rgb(115, 108 ,207)
+}
+h2:after{
+    content: ' '; 
+    display:block;
+    border: 1.5px solid #0278AE;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+input{
+    padding: 10px;
+    font-size:inherit;
+}
+input[type="text"], input[type="email"], input[type="password"], input[type="cpassword"] {
+    display: block;
+    margin-top: 35px;
+    margin-bottom: 25px;
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+    background-color: #A19898;
+    margin-left: auto;
+   margin-right: auto;
+   outline: none;
+}
+    button[type="submit"]{
+        margin-top: 10px;
+        margin-left: 250px;
+       background-color: #0278AE;;
+        font-size: large;
+        border-radius: 10px;
+        padding: 5px;
+        text-transform: uppercase;
+      
+    }
+    /*responsive code still needs editing*/
+    @media screen and (max-width: 1000px) {
+        .sign-up-form, .input-box, input[type=submit] {
+          width: 100%;
+          margin-top: 0;
+        }
