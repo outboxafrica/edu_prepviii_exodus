@@ -1,0 +1,99 @@
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+ }
+
+
+nav{
+    height: 90px;
+    background-color: #0278ae;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    padding-top: 1px; 
+    display: flex; 
+    justify-content: space-between; 
+ 
+ } 
+ 
+ .logo h1{
+    color: white;
+    font-size: 28px;
+ }
+ 
+ input[type=text]{
+    width: 180px;
+    height: 30px;
+    margin: 15px;
+    outline: none;
+    border-radius: 3px;
+    border: none;
+ }
+  fieldset{
+     border-radius: 5px;
+     padding: 10px 10px 10px 10px;
+     margin: 10px 10px 10px 10px;
+     border: 2px solid;
+     border-color: white;
+  }
+ 
+  fieldset h3{
+     text-align: center;
+     font-size: 30px;
+  }
+ 
+  textarea{
+     border-radius: 7px;
+     outline: none;
+     border: none;
+     background-color: #c4c4c4;
+  }
+ 
+  .image-with-text {
+    text-align: justify;
+    width: [width of img];
+ }
+ 
+ .image-with-text img{
+    margin-top: 10px;
+    border-radius: 3px;
+ }
+ 
+ .image-with-text a p:nth-child(1), p:nth-child(2), p:nth-child(3) {
+    color: white;
+    margin: 1px;
+    
+   
+ }
+ 
+ .title-container p{
+    color: black;
+    font-weight: 100px;
+    
+ }
+ 
+ .description-container p{
+    color: black;
+ }
+
+ button {
+    background-color: #0278ae;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    padding: 12px 10px;
+    margin: 20px 0;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+    border-radius: 10px;
+    outline: none; 
+    margin-left: 20%;
+    margin-right: 10%;
+
+    
+  }
+ 
+  button:hover {
+    opacity: 0.6;
+  }
+ 
