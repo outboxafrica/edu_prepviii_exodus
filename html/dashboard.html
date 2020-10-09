@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Dashboard</title>
-    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../css/board.css" media="screen" />
 </head>
 
 <body>
@@ -14,6 +14,14 @@
             <h1>
                 EDU-Stack OverFlow
             </h1>
+        </div>
+
+        <div class="image-with-text">
+
+            <img src="../images/home.png" alt="icon of image logo" width="40px" height="40px">
+            <a href="#" class="active">
+                <p>Home</p>
+            </a>
         </div>
         <form class="search" action="" style="width:400px">
             <input type="text" placeholder="Search Outbox EDU" name="search2">
@@ -25,13 +33,6 @@
                 </svg> 
             </button>
         </form>
-        <div class="image-with-text">
-
-            <img src="../images/home.png" alt="icon of image logo" width="40px" height="40px">
-            <a href="#" class="active">
-                <p>Home</p>
-            </a>
-        </div>
 
         <div class="image-with-text">
             <img src="../images/pp.png" alt="group icon" width="40px" height="40px">
@@ -60,33 +61,32 @@
     </nav>
 
 
-    <div class="container ">
-        <div id="container1 " class="containers ">
+    <div class="container">
+        <div id="container1" class="containers">
             <h2>
                 Top Questions
             </h2>
-            <div id=" question-list ">
-                <div class="question-summary " id="001 ">
-
-                    <div id="votes " class="grids ">
+            <div id="question-list">
+                <div class="question-summary" id="001 ">
+                    <div class="votes ">
                         <button id="upvote ">
                             <svg aria-hidden="true " class="vote-icon " width="36 " height="36 " viewBox="0 0 36 36 ">
                                    <path d="M2 26h32L18 10 2 26z "></path>
                                </svg>
                             </button>
 
-                        <div class="voteCount " data-value="0 ">0</div>
+                        <div class="voteCount" data-value="0 ">0</div>
                         <button id="upvote ">
                                 <svg aria-hidden="true " class="vote-icon " width="36 " height="36 " viewBox="0 0 36 36 ">
                                     <path d="M2 10h32L18 26 2 10z "></path>
                                 </svg>
                             </button>
                     </div>
-                    <div id="question " class="grids ">
+                    <div id="question">
                         <h3>How do you get the length of a string in javascript?</h3>
                         <div class="links ">
-                            <p> <a href="# "> Answer </a> </p>
-                            <p><a href="# "> Comment </a> </p>
+                            <p> <a href="# "> View solutions</a> </p>
+                            <p><a href="# "> Answer</a> </p>
                         </div>
                     </div>
 
@@ -96,10 +96,10 @@
 
         </div>
         <div id="container2 " class="containers ">
-            <a href="# " id="ask "> 
+            <a href="# " class="ask-link"> 
                        Ask Question
             </a>
-            <div class="text-block " id="intro ">
+            <div class="text-block ">
                 <p>Hello there,<br>Welcome to Outbox EDU Stack OverFlow
                     <br>This is a platform for Oubox EDU alumni to unblock each other. Ask a question and get answers instantly.
                 </p>
@@ -110,7 +110,7 @@
 
     <footer>
         <div class="footer-content ">
-            <p>Copyright © 2020 Outbox EDU</p>
+            <p id="copy">Copyright © 2020 Outbox EDU</p>
             <p><a href="# ">About us</a></p>
             <p><a href="# ">Terms</a></p>
             <p><a href="# ">Privacy</a></p>
