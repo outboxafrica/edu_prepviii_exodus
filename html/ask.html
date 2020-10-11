@@ -22,7 +22,7 @@
         </div>
         <div class="image-with-text">
             <img src="../images/home.png" alt="icon of image logo" width="40px" height="40px">
-            <a href="#" class="active">
+            <a href="dashboard.html" class="active">
                 <p>Home</p>
             </a>
         </div>
@@ -42,7 +42,7 @@
         <div class="image-with-text">
             <img src="../images/p.png" alt="icon of a person profile" width="40px" height="40px">
             <a href="../html/profile.html">
-                <p>profile</p>
+                <p id="user">profile</p>
             </a>
 
         </div>
@@ -57,7 +57,7 @@
 
     </nav>
 
-    <form id="Askqtn" onsubmit="return ask()">
+    <form id="Askqtn" action="dashboard.html" onsubmit="return askQn()">
         <fieldset>
             <h3>Ask Question</h3>
 
@@ -99,6 +99,16 @@
     </footer>
 
     <script src="../js/script.js "></script>
+    <script>
+        window.onload = function() {
+            var name = window.localStorage.getItem('username');
+            if (name != "undefined" || name != "null") {
+                document.getElementById('user').innerHTML = name;
+                return;
+            } else
+                document.getElementById('welcomeMessage').innerHTML = "Hello!";
+        }
+    </script>
 </body>
 
 </html>
