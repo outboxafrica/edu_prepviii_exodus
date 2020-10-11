@@ -22,7 +22,7 @@
         </div>
         <div class="image-with-text">
          <img src="../images/home.png" alt="icon of image logo" width="40px" height="40px">
-         <a href="../html/dashboard.html" class="active"> <p>Home</p></a>
+         <a href="dashboard.html" class="active"> <p>Home</p></a>
        </div>
 
 
@@ -35,63 +35,76 @@
          <a href="#"><p>Members</p></a>
        </div>
 
-       <div class="image-with-text">
-        <img src="../images/p.png" alt="icon of a person profile" width="40px" height="40px">
-        <a href="../html/profile.html"><p>profile</p></a>
+        <div class="image-with-text">
+            <img src="../images/p.png" alt="icon of a person profile" width="40px" height="40px">
+            <a href="../html/profile.html">
+                <p id="user">profile</p>
+            </a>
 
-    </div>
-
-       <div class="image-with-text">
-        <img src="../images/not.png" alt="icon of notification" width="40px" height="40px">
-         <a href="#"><p>Notifications</p></a>
-       </div>
-       
-         
-    </nav>
-
-    <form id="Askqtn">
-     <fieldset> 
-        <h3>Ask Question</h3>
-
-        <div class="title-container">
-            <label for="tt"><b>Title</b></label>
-
-             <p>Be specific in asking your question</p>
-             <textarea  cols="60" rows="4" id="ttArea" required> </textarea>
- 
         </div>
 
-        <div class="description-container">
-            <div>
+        <div class="image-with-text">
+            <img src="../images/not.png" alt="icon of notification" width="40px" height="40px">
+            <a href="#">
+                <p>Notifications</p>
+            </a>
+        </div>
 
-                <p>
-                    <label for="body"><b>Body</b></label>
-                    <p>Include all the information someone will need to answer your question</p>
- 
-                    <textarea rows = "10" cols = "80" id = "bodyArea" required></textarea>
-                  </p>
- 
+
+    </nav>
+
+    <form id="Askqtn" action="dashboard.html" onsubmit="return askQn()">
+        <fieldset>
+            <h3>Ask Question</h3>
+
+            <div class="title-container">
+                <label for="tt"><b>Title</b></label>
+                <p>Be specific in asking your question</p>
+                <textarea cols="60" rows="4" id="ttArea" required> </textarea>
 
             </div>
 
+            <div class="description-container">
+                <div>
+
+                    <p>
+                        <label for="body"><b>Body</b></label>
+                        <p>Include all the information someone will need to answer your question</p>
+
+                        <textarea rows="10" cols="80" id="bodyArea" required></textarea>
+                    </p>
+
+
+                </div>
+
+            </div>
+
+            <button type="submit" id="postqtn"> Post</button>
+        </fieldset>
+    </form>
+
+    <footer>
+        <div class="footer-content ">
+            <p id="copy">Copyright © 2020 Outbox EDU</p>
+            <p><a href="# ">About us</a></p>
+            <p><a href="# ">Terms</a></p>
+            <p><a href="# ">Privacy</a></p>
+            <p><a href="# ">Contact Us</a></p>
+
         </div>
- 
-        <button type="submit" id="postqtn"> Post</button>
-    </fieldset>
-  </form>
+    </footer>
 
-  <footer>
-    <div class="footer-content ">
-        <p id="copy">Copyright © 2020 Outbox EDU</p>
-        <p><a href="# ">About us</a></p>
-        <p><a href="# ">Terms</a></p>
-        <p><a href="# ">Privacy</a></p>
-        <p><a href="# ">Contact Us</a></p>
-
-    </div>
-</footer>
- 
-<script src="js/script.js "></script>
+    <script src="../js/script.js "></script>
+    <script>
+        window.onload = function() {
+            var name = window.localStorage.getItem('username');
+            if (name != "undefined" || name != "null") {
+                document.getElementById('user').innerHTML = name;
+                return;
+            } else
+                document.getElementById('welcomeMessage').innerHTML = "Hello!";
+        }
+    </script>
 </body>
 
 </html>

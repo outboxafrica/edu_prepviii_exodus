@@ -6,46 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EDU-Stack Overflow</title>
     <link rel="stylesheet" href="../css/signup.css" />
- 
-  </head>
-  <body> 
+
+</head>
+
+<body>
     <nav>
         <p><b>EDU-Stack Overflow</b></p>
         <p>Get your questions answered instantly!</p>
     </nav>
-    <div class="sign-up-form">
+    <div class="sign-up-form"> 
+        <form id="signupform" action="../index.html" onsubmit="return signup()">
+            <h2><b>Sign Up</b></h2>
+            <input id="username" type="text" class="input-box" placeholder="Username" required>
+            <input id="email" type="email" class="input-box" placeholder="Email" required>
+            <input id="password" type="password" class="input-box" placeholder="Password">
+            <input id="cpassword" type="password" class="input-box" placeholder="Comfirm Password">
+            <div>
+                <button id="signupbtn" type="submit" class="submit">Sign up</button>
+            </div>
+            <p><span>Have an account already? </span><a href="../index.html">Login</a></p>
 
-      <form>
-        <h2><b>Sign Up</b></h2>
-        <input type="text" class="input-box" placeholder="Username" required/>
-        <input type="email" class="input-box" placeholder="Email" required />
-        <input type="password" class="input-box" placeholder="Password" required />
-        <input
-          type="cpassword"
-          class="input-box"
-          placeholder="Comfirm Password"
-         required/>
-        <div>
-          <button type="submit" class="submit">Sign up</button>
-        </div>
-      </form>
-
-       
-    </div>
+        </form>
  
-
-    <footer>
-      <div class="footer-content">
-        <p id="copy">Copyright © 2020 Outbox EDU</p>
-        <p><a href="# ">About us</a></p>
-        <p><a href="# ">Terms</a></p>
-        <p><a href="# ">Privacy</a></p>
-        <p><a href="# ">Contact Us</a></p>
-      </div>
-
-  </footer>
+    </div>
 
 
-  </body>
+    <footer> 
+        <div class="footer-content ">
+            <p id="copy">Copyright © 2020 Outbox EDU</p>
+            <p><a href="# ">About us</a></p>
+            <p><a href="# ">Terms</a></p>
+            <p><a href="# ">Privacy</a></p>
+            <p><a href="# ">Contact Us</a></p>
 
-</html> 
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
+ 
