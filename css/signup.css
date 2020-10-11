@@ -1,28 +1,38 @@
-*{margin:0;
-padding:0;
+* {
+    margin: 0;
+    padding: 0;
 }
-body{
-background-color: #c4c4c4;
+
+body {
+    background-color: #c4c4c4;
 }
+
 nav{
     background-color:#0278AE;
     height: 90px; 
   
-}
-nav p:nth-child(1){
+
+
+nav p:nth-child(1) {
     font-size: 45px;
     text-align: center;
-color: #FFFFFF;
-
-padding-top:3px;
+    color: #FFFFFF;
+    padding-top:3px;
 
 }
 nav p:nth-child(2){
     font-size: 18px;
+    color: #FFFFFF;
+    padding-top: 30px;
+}
+
+nav p:nth-child(2) {
+    font-size: 20px;
     text-align: center;
     
     
 }
+
 form {border: 3px solid #f1f1f1;
     background-color: white;
     margin:20px 20% 30px 20%;
@@ -30,23 +40,30 @@ form {border: 3px solid #f1f1f1;
     width: 60%;
     height: 100%;
 }
-form h2{
+
+form h2 {
     text-align: center;
-    color: rgb(115, 108 ,207)
+    color: rgb(115, 108, 207)
 }
-h2:after{
-    content: ' '; 
-    display:block;
+
+h2:after {
+    content: ' ';
+    display: block;
     border: 1.5px solid #0278AE;
     width: 50%;
     margin-left: auto;
     margin-right: auto;
 }
-input{
+
+input {
     padding: 10px;
-    font-size:inherit;
+    font-size: inherit;
 }
-input[type="text"], input[type="email"], input[type="password"], input[type="cpassword"] {
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="cpassword"] {
     display: block;
     margin-top: 35px;
     margin-bottom: 25px;
@@ -55,9 +72,10 @@ input[type="text"], input[type="email"], input[type="password"], input[type="cpa
     border-radius: 10px;
     background-color: #A19898;
     margin-left: auto;
-   margin-right: auto;
-   outline: none;
+    margin-right: auto;
+    outline: none;
 }
+
     button[type="submit"]{
         background-color: #0278ae;
    font-size: 15px;
@@ -78,6 +96,27 @@ input[type="text"], input[type="email"], input[type="password"], input[type="cpa
  button:hover {
     opacity: 0.6;
   }
+
+
+
+
+/*responsive code still needs editing*/
+
+@media screen and (max-width: 1000px) {
+    .sign-up-form,
+    .input-box,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    } 
+}
+
+p {
+    color: black;
+    text-align: center;
+    padding-top: 25px;
+    font-size: 20px;
+} 
 
     /*responsive code still needs editing*/
     @media screen and (max-width: 1000px) {
@@ -122,4 +161,4 @@ input[type="text"], input[type="email"], input[type="password"], input[type="cpa
         text-decoration: none;
         color: white;
     }
-
+ 

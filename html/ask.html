@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EDU-Stack OverFlow</title>
     <link rel="stylesheet" href="../css/ask.css">
 </head>
-<STYLE>A {text-decoration: none;} </STYLE>
+<STYLE>
+    A {
+        text-decoration: none;
+    }
+</STYLE>
+
 <body>
     <nav>
         <div class="logo">
@@ -15,11 +21,10 @@
             </h1>
         </div>
         <div class="image-with-text">
-
          <img src="../images/home.png" alt="icon of image logo" width="40px" height="40px">
          <a href="../html/dashboard.html" class="active"> <p>Home</p></a>
        </div>
-        
+
 
        <form id="search">
        <input type="text" placeholder="Search EDU-Stack OverFlow" name="uname"> 
@@ -45,28 +50,32 @@
     </nav>
 
     <form id="Askqtn">
-     <fieldset>
+     <fieldset> 
         <h3>Ask Question</h3>
 
         <div class="title-container">
             <label for="tt"><b>Title</b></label>
+
              <p>Be specific in asking your question</p>
              <textarea  cols="60" rows="4" id="ttArea" required> </textarea>
+ 
         </div>
 
         <div class="description-container">
             <div>
-                
+
                 <p>
-                    <label for= "body"><b>Body</b></label>
+                    <label for="body"><b>Body</b></label>
                     <p>Include all the information someone will need to answer your question</p>
+ 
                     <textarea rows = "10" cols = "80" id = "bodyArea" required></textarea>
                   </p>
+ 
 
-                
             </div>
-               
+
         </div>
+ 
         <button type="submit" id="postqtn"> Post</button>
     </fieldset>
   </form>
@@ -81,7 +90,8 @@
 
     </div>
 </footer>
-
-
+ 
+<script src="js/script.js "></script>
 </body>
+
 </html>
