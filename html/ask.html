@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EDU-Stack OverFlow</title>
     <link rel="stylesheet" href="../css/ask.css">
 </head>
-<STYLE>A {text-decoration: none;} </STYLE>
+<STYLE>
+    A {
+        text-decoration: none;
+    }
+</STYLE>
+
 <body>
     <nav>
         <div class="logo">
@@ -16,46 +22,54 @@
         </div>
         <div class="image-with-text">
 
-         <img src="../images/home.png" alt="icon of image logo" width="40px" height="40px">
-         <a href="#" class="active"> <p>Home</p></a>
-       </div>
+            <img src="../images/home.png" alt="icon of image logo" width="40px" height="40px">
+            <a href="#" class="active">
+                <p>Home</p>
+            </a>
+        </div>
 
-       <div class="image-with-text">
-        <img src="../images/pp.png" alt="icon of a group of people" width="40px" height="40px">
-         <a href="#"><p>Members</p></a>
-       </div>
+        <div class="image-with-text">
+            <img src="../images/pp.png" alt="icon of a group of people" width="40px" height="40px">
+            <a href="#">
+                <p>Members</p>
+            </a>
+        </div>
 
-       <div class="image-with-text">
-        <img src="../images/not.png" alt="icon of notification" width="40px" height="40px">
-         <a href="#"><p>Notifications</p></a>
-       </div>
-       
-        <input type="text" placeholder="Search EDU-Stack OverFlow" name="uname">   
+        <div class="image-with-text">
+            <img src="../images/not.png" alt="icon of notification" width="40px" height="40px">
+            <a href="#">
+                <p>Notifications</p>
+            </a>
+        </div>
+
+        <input type="text" placeholder="Search EDU-Stack OverFlow" name="uname">
     </nav>
-    
+
     <fieldset>
         <h3>Ask Question</h3>
 
         <div class="title-container">
             <label for="tt"><b>Title</b></label>
-             <p>Be specific in asking your question</p>
-             <textarea name="" id="ttArea" cols="60" rows="4"> </textarea>
+            <p>Be specific in asking your question</p>
+            <textarea name="" id="ttArea" cols="60" rows="4"> </textarea>
         </div>
 
         <div class="description-container">
             <div>
-                
-                <p>
-                    <label for= "body"><b>Body</b></label>
-                    <p>Include all the information someone will need to answer your question</p>
-                    <textarea id = "bodyArea" rows = "10" cols = "80"></textarea>
-                  </p>
 
-                
+                <p>
+                    <label for="body"><b>Body</b></label>
+                    <p>Include all the information someone will need to answer your question</p>
+                    <textarea id="bodyArea" rows="10" cols="80"></textarea>
+                </p>
+
+
             </div>
-               
+
         </div>
-        <button style="text-align:center;">Post</button>
+        <button id="post-qn" style="text-align:center;">Post</button>
     </fieldset>
+    <script src="js/script.js "></script>
 </body>
+
 </html>

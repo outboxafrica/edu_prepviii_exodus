@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>sign up page</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="../css/signup.css" />
+</head>
+
+<body>
     <nav>
-      <p><b>EDU-Stack Overflow</b></p>
-      <p>Get your questions answered instantly!</p>
+        <p><b>EDU-Stack Overflow</b></p>
+        <p>Get your questions answered instantly!</p>
     </nav>
     <div class="sign-up-form">
-      <form>
-        <h2><b>Sign Up</b></h2>
-        <input type="text" class="input-box" placeholder="Username" >
-        <input type="email" class="input-box" placeholder="Email" >
-        <input type="password" class="input-box" placeholder="Password" >
-        <input type="cpassword" class="input-box" placeholder="Comfirm Password">
-        <div>
-          <button type="submit" class="submit">Sign up</button>
-        </div>
-      </form>
+        <form id="signupform" action="../index.html" onsubmit="return signup();">
+            <h2><b>Sign Up</b></h2>
+            <input id="username" type="text" class="input-box" placeholder="Username" required>
+            <input id="email" type="email" class="input-box" placeholder="Email" required>
+            <input id="password" type="password" class="input-box" placeholder="Password">
+            <input id="cpassword" type="password" class="input-box" placeholder="Comfirm Password">
+            <div>
+                <button id="signupbtn" type="submit" class="submit">Sign up</button>
+            </div>
+            <p><span>Have an account already? </span><a href="../index.html">Login</a></p>
+
+        </form>
     </div>
-  </body>
+    <script src="../js/script.js"></script>
+</body>
+
 </html>
