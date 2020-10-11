@@ -85,6 +85,9 @@ nav{
    bottom: 0;
    width: 100%;
    border-top: 2px solid rgb(26, 147, 247);
+   background: #0278ae;
+   margin-top: auto;
+   position: absolute;
 }
 
 .footer-content {
@@ -95,11 +98,13 @@ nav{
 
 .footer-content p {
    display: inline-block;
-   font-size: 20px;
+   font-size: 16px;
    width: 16%;
-   color: black;
+   color: white;
    align-content: justify;
-   margin-right: 10px;
+   margin-right: 4px;
+   padding-top: 20px;
+   padding-left: 8px;
 }
 
 .footer-content #copy {
@@ -108,7 +113,7 @@ nav{
 
 .footer-content a {
    text-decoration: none;
-   color: black;
+   color: white;
 }
 
  
