@@ -91,7 +91,7 @@ button[type="submit"] {
     input[type=submit] {
         width: 100%;
         margin-top: 0;
-    }
+    } 
 }
 
 p {
@@ -99,4 +99,44 @@ p {
     text-align: center;
     padding-top: 25px;
     font-size: 20px;
-}
+} 
+    /*responsive code still needs editing*/
+    @media screen and (max-width: 1000px) {
+        .sign-up-form, .input-box, input[type=submit] {
+          width: 100%;
+          margin-top: 0;
+        }
+
+
+    }
+
+    footer {
+        bottom: 0;
+        width: 100%;
+        border-top: 2px solid rgb(26, 147, 247);
+    }
+    
+    .footer-content {
+        display: block;
+        height: 80px;
+        margin-bottom: 0%;
+    }
+    
+    .footer-content p {
+        display: inline-block;
+        font-size: 20px;
+        width: 16%;
+        color: black;
+        align-content: justify;
+        margin-right: 10px;
+    }
+    
+    .footer-content #copy {
+        width: 25%;
+    }
+    
+    .footer-content a {
+        text-decoration: none;
+        color: black;
+    }
+ 

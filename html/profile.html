@@ -1,18 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EDU-Stack OverFlow</title>
-    <link rel="stylesheet" href="../css/ask.css">
+    <link rel="stylesheet" href="../css/profile.css">
 </head>
-<STYLE>
-    A {
-        text-decoration: none;
-    }
-</STYLE>
-
+<STYLE>A {text-decoration: none;} </STYLE>
 <body>
     <nav>
         <div class="logo">
@@ -21,14 +15,17 @@
             </h1>
         </div>
         <div class="image-with-text">
+
          <img src="../images/home.png" alt="icon of image logo" width="40px" height="40px">
          <a href="#" class="active"> <p>Home</p></a>
        </div>
-       <input type="text" placeholder="Search EDU-Stack OverFlow" name="uname">  
 
-       <form id="search">
+
+       <form id="Search">
        <input type="text" placeholder="Search EDU-Stack OverFlow" name="uname"> 
        </form> 
+
+    
 
        <div class="image-with-text">
         <img src="../images/pp.png" alt="icon of a group of people" width="40px" height="40px">
@@ -36,51 +33,34 @@
        </div>
 
        <div class="image-with-text">
-        <img src="../images/p.png" alt="icon of a person profile" width="40px" height="40px">
-        <a href="../html/profile.html"><p>profile</p></a>
+           <img src="../images/p.png" alt="icon of a person profile" width="40px" height="40px">
+           <a href="../html/profile.html"><p>profile</p></a>
 
-    </div>
+       </div>
 
        <div class="image-with-text">
         <img src="../images/not.png" alt="icon of notification" width="40px" height="40px">
          <a href="#"><p>Notifications</p></a>
-       </div>
-       
-         
+       </div>     
     </nav>
+    
+    <div id="person-profile">
+        <img src="../images/ppp.jpeg" alt="icon of a person's profile">
+    </div>
 
-    <form id="Askqtn">
-     <fieldset> 
-        <h3>Ask Question</h3>
+   <section id="answers">
+        
+     <p>Answers</p>  
+        
+   </section>
 
-        <div class="title-container">
-            <label for="tt"><b>Title</b></label>
-< 
-             <p>Be specific in asking your question</p>
-             <textarea  cols="60" rows="4" id="ttArea" required> </textarea>
- 
-        </div>
+    
+   <section id="questions">
+     <p>Questions</p> 
+   </section>
 
-        <div class="description-container">
-            <div>
 
-                <p>
-                    <label for="body"><b>Body</b></label>
-                    <p>Include all the information someone will need to answer your question</p>
- 
-                    <textarea rows = "10" cols = "80" id = "bodyArea" required></textarea>
-                  </p>
- 
-
-            </div>
-
-        </div>
- 
-        <button type="submit" id="postqtn"> Post</button>
-    </fieldset>
-  </form>
-
-  <footer>
+   <footer>
     <div class="footer-content ">
         <p id="copy">Copyright © 2020 Outbox EDU</p>
         <p><a href="# ">About us</a></p>
@@ -90,8 +70,7 @@
 
     </div>
 </footer>
- 
-<script src="js/script.js "></script>
+   
+    
 </body>
-
 </html>
