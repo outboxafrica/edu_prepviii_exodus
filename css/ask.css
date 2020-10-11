@@ -101,6 +101,8 @@ nav{
    bottom: 0;
    width: 100%;
    border-top: 2px solid rgb(26, 147, 247);
+   background: #0278ae;
+   
 }
 
 .footer-content {
@@ -111,11 +113,13 @@ nav{
 
 .footer-content p {
    display: inline-block;
-   font-size: 20px;
+   font-size: 16px;
    width: 16%;
-   color: black;
+   color: white;
    align-content: justify;
    margin-right: 10px;
+   padding-left: 8px;
+   padding-top: 10px;
 }
 
 .footer-content #copy {
@@ -124,5 +128,28 @@ nav{
 
 .footer-content a {
    text-decoration: none;
-   color: black;
+   color: white;
+}
+
+@media (max-width: 700px){
+   .logo h1{
+      color: white;
+      font-size: 16px;
+   }
+   fieldset h3{
+      text-align: center;
+      font-size: 20px;
+   }
+   form{
+      width: 350px;
+   }
+   fieldset{
+      width: 350px;
+   }
+
+   textarea{
+      columns: 30;
+      row-gap: 3;
+   }
+
 }

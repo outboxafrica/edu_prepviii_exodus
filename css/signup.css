@@ -5,30 +5,30 @@ body{
 background-color: #c4c4c4;
 }
 nav{
-    background-color:#0278AE; ;
+    background-color:#0278AE;
+    height: 90px; 
   
 }
 nav p:nth-child(1){
     font-size: 45px;
     text-align: center;
 color: #FFFFFF;
-padding-top: 30px;
+
+padding-top:3px;
 
 }
 nav p:nth-child(2){
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
-    padding-bottom: 30px;
+    
+    
 }
-form{
-    margin: 20px auto;
-    width: 600px;
-    color: #0278AE;
-    border: #0278AE;
-    background-color: #FFFFFF;
-    padding-top: 05px;
+form {border: 3px solid #f1f1f1;
+    background-color: white;
+    margin:20px 20% 30px 20%;
     border-radius: 10px;
-    border: 3px solid #F1F1F1;
+    width: 60%;
+    height: 100%;
 }
 form h2{
     text-align: center;
@@ -59,15 +59,26 @@ input[type="text"], input[type="email"], input[type="password"], input[type="cpa
    outline: none;
 }
     button[type="submit"]{
-        margin-top: 10px;
-        margin-left: 250px;
-       background-color: #0278AE;;
-        font-size: large;
-        border-radius: 10px;
-        padding: 5px;
-        text-transform: uppercase;
+        background-color: #0278ae;
+   font-size: 15px;
+   font-weight: 600;
+   color: white;
+   padding: 12px 10px;
+   margin: 20px 0;
+   border: none;
+   cursor: pointer;
+   width: 20%;
+   border-radius: 10px;
+   outline: none;
+   margin-left: 40%;       
       
     }
+
+
+ button:hover {
+    opacity: 0.6;
+  }
+
     /*responsive code still needs editing*/
     @media screen and (max-width: 1000px) {
         .sign-up-form, .input-box, input[type=submit] {
@@ -82,21 +93,25 @@ input[type="text"], input[type="email"], input[type="password"], input[type="cpa
         bottom: 0;
         width: 100%;
         border-top: 2px solid rgb(26, 147, 247);
+        position: absolute;
     }
     
     .footer-content {
         display: block;
         height: 80px;
         margin-bottom: 0%;
+        background: #0278AE;
     }
     
     .footer-content p {
         display: inline-block;
-        font-size: 20px;
-        width: 16%;
-        color: black;
-        align-content: justify;
-        margin-right: 10px;
+   font-size: 16px;
+   width: 16%;
+   color:white;
+   align-content: justify;
+   margin-right: 10px;
+   padding-top: 30px;
+   padding-left: 8px;
     }
     
     .footer-content #copy {
@@ -105,6 +120,6 @@ input[type="text"], input[type="email"], input[type="password"], input[type="cpa
     
     .footer-content a {
         text-decoration: none;
-        color: black;
+        color: white;
     }
 
