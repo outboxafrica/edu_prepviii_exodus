@@ -41,13 +41,13 @@
                 <p>Members</p>
             </a>
         </div>
- 
+
         <div class="image-with-text" id="profile">
             <img src="../images/p.png " alt="icon of a person profile " width="40px " height="40px ">
             <a href="../html/profile.html ">
                 <p id="user">profile</p>
             </a>
- 
+
 
 
         </div>
@@ -62,48 +62,16 @@
 
     </nav>
 
-
-
-
     <div class="container">
         <div id="container1" class="containers">
             <h2>
                 Top Questions
             </h2>
             <div id="question-list">
-                <div class="question-summary">
-                    <div class="votes ">
-                        <button id="upvote " onclick="dovote( 'add') ">
-                            <svg aria-hidden="true " class="vote-icon " width="36 " height="36 " viewBox="0 0 36 36 ">
-                                   <path d="M2 26h32L18 10 2 26z "></path>
-                               </svg>
-                            </button>
 
-                        <div class="voteCount" id="vote-count">0</div>
-                        <button id="downvote " onclick="dovote() ">
-                                <svg aria-hidden="true " class="vote-icon " width="36 " height="36 " viewBox="0 0 36 36 ">
-                                    <path d="M2 10h32L18 26 2 10z "></path>
-                                </svg>
-                            </button>
-                    </div>
-                    <div id="question">
-                        <p id="qtn-id">
-                        </p>
-                        <h3 id="qntitle ">How do you get the length of a string in javascript?</h3>
-                        <p id="askedby "></p>
-                        <div class="links ">
- 
-                            <p> <a href="view.html "> View solutions</a> </p>
-                            <p><a href="ans.html "> Answer</a> </p>
- 
-                        </div>
-                    </div>
-
-                </div>
             </div>
+        </div>
 
-
-        </div> 
         <div id="container2" class="containers">
             <a href="ask.html" class="ask-link"> 
  
@@ -128,17 +96,10 @@
 
         </div>
     </footer>
-    <script src="../js/script.js"></script>
+    <script src="../Js/script.js"></script>
     <script>
-        window.onload = function() {
-            var name = window.localStorage.getItem('username');
-            if (name != "undefined " || name != "null ") {
-                document.getElementById('user').innerHTML = name;
-                return;
-            } else
-                document.getElementById('welcomeMessage').innerHTML = "Hello! ";
-
-        }
+        window.onload = userName();
+        window.onload = retrieveQns();
     </script>
 </body>
 

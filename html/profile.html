@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
- 
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EDU-Stack OverFlow</title>
     <link rel="stylesheet" href="../css/profile.css" />
-  </head>
-  <style>
+</head>
+<style>
     A {
-      text-decoration: none;
+        text-decoration: none;
     }
-  </style>
-  <body> 
+</style>
+
+<body>
     <nav>
-      <div class="logo">
-        <h1>EDU-Stack OverFlow</h1>
-      </div>
-      <div class="image-with-text">
- 
+        <div class="logo">
+            <h1>EDU-Stack OverFlow</h1>
+        </div>
+        <div class="image-with-text">
+
             <img src="../images/home.png" alt="icon of image logo" width="40px" height="40px">
             <a href="dashboard.html" class="active">
                 <p>Home</p>
             </a>
         </div>
-  
+
         <form id="Search">
             <input type="text" placeholder="Search EDU-Stack OverFlow" name="uname">
         </form>
@@ -79,18 +80,10 @@
 
         </div>
     </footer>
-
+    <script src="../Js/script.js "></script>
     <script>
-        window.onload = function() {
-            var name = window.localStorage.getItem('username');
-            if (name != "undefined" || name != "null") {
-                document.getElementById('user').innerHTML = name;
-                return;
-            } else
-                document.getElementById('welcomeMessage').innerHTML = "Hello!";
-        }
+        window.onload = userName();
     </script>
 </body>
 
 </html>
- 

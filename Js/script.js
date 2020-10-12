@@ -87,22 +87,50 @@ function retrieveQns() {
     qns = !!localStorage.getItem('qns') ?
         JSON.parse(localStorage.getItem('qns')) : [];
 
-    for (i = 0; i < qns.length; i++) {
-        var title = qns[i].qntitle;
-        var qnID = qns[i].qnid;
-        var body = qns[i].qnDescription;
-        var askedby = qns[i].username;
-        createQnDiv();
-        document.getElementById('qtn-id').innerHTML = qnID;
-        document.getElementById('qntitle').innerHTML = title;
-        document.getElementById('qntitle').innerHTML = body;
-        document.getElementById('askedby').innerHTML = "Asked by:" + askedby;
-
-
+    const parent = document.getElementById('question-list');
+    for (const {
+            qntitle,
+            qnDescription,
+            user
+        }
+        of qns) {
+        // Build up new dom nodes
+        const qncontainer = document.createElement("div");
+        qncontainer.className = 'question-summary';
+        const title = document.createElement("h3");
+        title.id = "";
+        title.textContent = qntitle;
+        const askedBy = document.createElement("p");
+        askedBy.textContent = " Asked by: " + user;
+        const description = document.createElement("div");
+        description.className = 'qn-body';
+        description.textContent = qnDescription;
+        const links = document.createElement("div");
+        links.className = 'links';
+        const answerLink = document.createElement("a");
+        answerLink.className = 'link';
+        answerLink.href = 'ans.html';
+        answerLink.innerHTML = "Answer"
+        const viewAnswerLink = document.createElement("a");
+        viewAnswerLink.className = 'link';
+        viewAnswerLink.href = 'view.html';
+        viewAnswerLink.innerHTML = "View solutions"
+            // append them: 
+        parent.appendChild(qncontainer);
+        qncontainer.appendChild(title);
+        qncontainer.appendChild(askedBy);
+        qncontainer.appendChild(description);
+        qncontainer.appendChild(links);
+        links.appendChild(answerLink);
+        links.appendChild(viewAnswerLink);
     }
 }
 
 //Answering a question
+function getQn() {
+    var qnT = document.getElementById('uname').value;
+    window.localStorage.setItem("qntitle", qnT);
+}
 
 function ansQn() {
     anss = !!localStorage.getItem('anss') ?
@@ -123,6 +151,40 @@ function ansQn() {
 }
 
 
+function viewSolutions() {
+    anss = !!localStorage.getItem('anss') ?
+        JSON.parse(localStorage.getItem('anss')) : [];
+    const solutions = document.getElementById('qns')
+    for (qtntitle in anss.qntitle) {
+        var qnTitle = anss.qntitle;
+        var username = anss.user;
+        var answerdesc = anss.qnDescription;
+        // Build up new dom nodes 
+        const title = document.createElement("h2");
+        title.textContent = qnTitle;
+        const answeredBy = document.createElement("p");
+        answeredBy.textContent = " Answer by: " + username;
+        const description = document.createElement("div");
+        description.textContent = answerdesc;
+        const comment = document.createElement("input");
+        // append them:
+        solutions.appendChild(title);
+        solutions.appendChild(askedBy);
+        solutions.appendChild(description);
+        solutions.appendChild(comment);
+    }
+}
+
+
+//loading username on all pages
+function userName() {
+    var uname = window.localStorage.getItem('username');
+    if (uname != "undefined " || name != "null ") {
+        document.getElementById('user').innerHTML = uname;
+        return;
+    } else
+        document.getElementById('welcomeMessage').innerHTML = "Hello! ";
+}
 //Voting
 var votes = 0;
 
