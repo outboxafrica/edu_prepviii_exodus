@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EDU-Stack OverFlow</title>
+    <link rel="stylesheet" type="text/css" href="../css/board.css" media="screen" />
+</head>
+
+<STYLE>
+    A {
+        text-decoration: none;
+    }
+</STYLE>
+
+
+<body>
+    <nav>
+        <div class="logo">
+            <h1>
+                EDU-Stack OverFlow
+            </h1>
+        </div>
+
+        <div class="image-with-text ">
+
+            <img src="../images/home.png " alt="icon of image logo " width="40px " height="40px ">
+            <a href="#" class="active ">
+                <p>Home</p>
+            </a>
+        </div>
+
+        <form id="search">
+            <input type="text" placeholder="Search EDU-Stack OverFlow" name="uname ">
+        </form>
+
+        <div class="image-with-text">
+            <img src="../images/pp.png " alt="icon of a group of people " width="40px " height="40px ">
+            <a href="# ">
+                <p>Members</p>
+            </a>
+        </div>
+ 
+        <div class="image-with-text" id="profile">
+            <img src="../images/p.png " alt="icon of a person profile " width="40px " height="40px ">
+            <a href="../html/profile.html ">
+                <p id="user">profile</p>
+            </a>
+ 
+
+
+        </div>
+
+        <div class="image-with-text ">
+            <img src="../images/not.png " alt="icon of notification " width="40px " height="40px ">
+            <a href="# ">
+                <p>Notifications</p>
+            </a>
+        </div>
+
+
+    </nav>
+
+
+
+
+    <div class="container">
+        <div id="container1" class="containers">
+            <h2>
+                Top Questions
+            </h2>
+            <div id="question-list">
+                <div class="question-summary">
+                    <div class="votes ">
+                        <button id="upvote " onclick="dovote( 'add') ">
+                            <svg aria-hidden="true " class="vote-icon " width="36 " height="36 " viewBox="0 0 36 36 ">
+                                   <path d="M2 26h32L18 10 2 26z "></path>
+                               </svg>
+                            </button>
+
+                        <div class="voteCount" id="vote-count">0</div>
+                        <button id="downvote " onclick="dovote() ">
+                                <svg aria-hidden="true " class="vote-icon " width="36 " height="36 " viewBox="0 0 36 36 ">
+                                    <path d="M2 10h32L18 26 2 10z "></path>
+                                </svg>
+                            </button>
+                    </div>
+                    <div id="question">
+                        <p id="qtn-id">
+                        </p>
+                        <h3 id="qntitle ">How do you get the length of a string in javascript?</h3>
+                        <p id="askedby "></p>
+                        <div class="links ">
+ 
+                            <p> <a href="view.html "> View solutions</a> </p>
+                            <p><a href="ans.html "> Answer</a> </p>
+ 
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div> 
+        <div id="container2" class="containers">
+            <a href="ask.html" class="ask-link"> 
+ 
+                       Ask Question
+            </a>
+            <div class="text-block">
+                <p>Hello there,<br>Welcome to Outbox EDU Stack OverFlow
+                    <br>This is a platform for Oubox EDU alumni to unblock each other. Ask a question and get answers instantly.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p id="copy">Copyright © 2020 Outbox EDU</p>
+            <p><a href="# ">About us</a></p>
+            <p><a href="# ">Terms</a></p>
+            <p><a href="# ">Privacy</a></p>
+            <p><a href="# ">Contact Us</a></p>
+
+        </div>
+    </footer>
+    <script src="../js/script.js"></script>
+    <script>
+        window.onload = function() {
+            var name = window.localStorage.getItem('username');
+            if (name != "undefined " || name != "null ") {
+                document.getElementById('user').innerHTML = name;
+                return;
+            } else
+                document.getElementById('welcomeMessage').innerHTML = "Hello! ";
+
+        }
+    </script>
+</body>
+
+</html>

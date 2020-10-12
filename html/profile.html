@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EDU-Stack OverFlow</title>
+    <link rel="stylesheet" href="../css/profile.css" />
+  </head>
+  <style>
+    A {
+      text-decoration: none;
+    }
+  </style>
+  <body> 
+    <nav>
+      <div class="logo">
+        <h1>EDU-Stack OverFlow</h1>
+      </div>
+      <div class="image-with-text">
+ 
+            <img src="../images/home.png" alt="icon of image logo" width="40px" height="40px">
+            <a href="dashboard.html" class="active">
+                <p>Home</p>
+            </a>
+        </div>
+  
+        <form id="Search">
+            <input type="text" placeholder="Search EDU-Stack OverFlow" name="uname">
+        </form>
+
+        <div class="image-with-text">
+            <img src="../images/pp.png" alt="icon of a group of people" width="40px" height="40px">
+            <a href="#">
+                <p>Members</p>
+            </a>
+        </div>
+
+        <div class="image-with-text">
+            <img src="../images/p.png" alt="icon of a person profile" width="40px" height="40px">
+            <a href="../html/profile.html">
+                <p id="user">profile</p>
+            </a>
+
+        </div>
+
+        <div class="image-with-text">
+            <img src="../images/not.png" alt="icon of notification" width="40px" height="40px">
+            <a href="#">
+                <p>Notifications</p>
+            </a>
+        </div>
+    </nav>
+
+    <div id="person-profile">
+        <img src="../images/ppp.jpeg" alt="icon of a person's profile">
+        <h2 id="username"></h2>
+    </div>
+
+    <section id="answers">
+
+        <p>Answers</p>
+
+    </section>
+
+
+    <section id="questions">
+        <p>Questions</p>
+    </section>
+
+
+    <footer>
+        <div class="footer-content ">
+            <p id="copy">Copyright © 2020 Outbox EDU</p>
+            <p><a href="# ">About us</a></p>
+            <p><a href="# ">Terms</a></p>
+            <p><a href="# ">Privacy</a></p>
+            <p><a href="# ">Contact Us</a></p>
+
+        </div>
+    </footer>
+
+    <script>
+        window.onload = function() {
+            var name = window.localStorage.getItem('username');
+            if (name != "undefined" || name != "null") {
+                document.getElementById('user').innerHTML = name;
+                return;
+            } else
+                document.getElementById('welcomeMessage').innerHTML = "Hello!";
+        }
+    </script>
+</body>
+
+</html>
+ 
